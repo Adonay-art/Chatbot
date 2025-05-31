@@ -7,7 +7,7 @@ import time
 # load_dotenv()
 
 # 1. Initialize Groq client with API key
-client = groq.Groq(api_key="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")
+client = groq.Groq(api_key="")
 # OR use this line if using env variable:
 # client = groq.Groq(api_key=os.getenv("GROQ_API_KEY"))
 

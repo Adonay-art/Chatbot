@@ -12,14 +12,13 @@ client = groq.Groq(api_key="gsk_g24tHRgisrRJC4PAzHDeWGdyb3FYNdFl9f1psedc3DZiJvim
 # client = groq.Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 # 2. Ask user for their name and greet them
-user_name = input("👋 Hi there! What's your name? ")
-print(f"🤖 Nice to meet you, {user_name}! I'm your AI assistant. Type 'exit' to stop anytime.\n")
+user_name = input("🤖 Yo human! What's your name, superhero? 🦸‍♂️🦸‍♀️: ")
+print(f"🎉 Sup {user_name}! I'm ChatBot 3000 🤪 — half genius, half comedian, all yours. Type 'exit' if you wanna escape my awesomeness.\n")
 
 # 3. Set up initial chat history
 chat_history = [
-    {"role": "system", "content": "You are a helpful assistant who responds in a friendly tone, uses occasional emojis, and keeps the conversation engaging."}
+    {"role": "system", "content": "You're a funny and sarcastic assistant who loves cracking jokes, using emojis, and keeping things light-hearted."}
 ]
-
 # 4. Start the chat loop
 while True:
     user_input = input(f"{user_name}: ")
